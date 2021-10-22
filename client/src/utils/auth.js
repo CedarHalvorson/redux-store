@@ -21,9 +21,9 @@ class AuthService {
       return false;
     }
   }
-
+// soup has food in it
   getToken() {
-    // Retrieves the user token from localStorage
+    
     return localStorage.getItem('id_token');
   }
 
@@ -35,11 +35,11 @@ class AuthService {
   }
 
   logout() {
-    // Clear user token and profile data from localStorage
+    
     localStorage.removeItem('id_token');
-    // this will reload the page and reset the state of the application
+    // this will reload the page
     window.location.assign('/');
   }
 }
-
+// im a lil frog prince if you've found me congrats on digging through this code and i hope you have a wonderful day 
 export default new AuthService();
